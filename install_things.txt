@@ -3,3 +3,5 @@
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt-get update
 sudo apt-get install atom
+###install brackets, live server works atoms ls doesnt work
+###got to http://brackets.io/
