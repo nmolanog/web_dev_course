@@ -1,0 +1,43 @@
+
+/* globales*/
+.contenedor{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*this is style for id, not very used, should not be used several times in the same page
+better to use class */
+.site-header.inicio{
+  background-image: url(../img/header.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  min height: 600px;
+}
+.barra{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+/*the a letter is for selecting the childre a of class navegasion*/
+.navegacion a{
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navegacion a:hover{
+  color: #71b100;
+}
+
+.navegacion a:last-of-type{
+  margin: 0;
+}
+
+.encabesado{
+  color: darkblue;
+}
