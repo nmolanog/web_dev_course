@@ -1,4 +1,5 @@
 html{
+    box-sizing: border-box;
     font-size:  62.5% /*reset para rems*/
 }
 
@@ -10,6 +11,9 @@ body{
 }
 
 /* globales*/
+img{
+    max-width: 100%;
+}
 .contenedor{
   max-width: 120rem;
   margin: 0 auto;
@@ -40,11 +44,32 @@ h4{
     font-weight: 300;
 }
 
-.       centrar-texto{
+.centrar-texto{
+    text-align: center;
+}
+.d-block{
+    display: block!important; /**break order rulos so it over rides display in .boton**/
+}
+
+/**botones**/
+.boton{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display:  inline-block;
     text-align: center;
 }
 
+.boton-amarillo{
+    background-color: #e08709;
+}
 
+.boton-verde{
+    background-color: #71b100;
+}
 /*this is style for id, not very used, should not be used several times in the same page
 better to use class */
 .site-header.inicio{
@@ -52,7 +77,7 @@ better to use class */
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  min height: 60r em;
+  min height: 60r rem;
 }
 
 .contenido-header{
@@ -113,3 +138,37 @@ better to use class */
     text-transform: uppercase; 
 }
 
+/**anuncios**/
+
+.contenedor-anuncios{
+    display: flex;
+}
+
+.anuncio{
+    flex-basis: calc(33.3% - 1rem);
+    justify-content: space-between;
+    border-style: solid;
+    border-color: #b5b5b5;
+    border-width: 1px;
+    background-color: #f5f5f5;
+}
+
+.contenedor-anuncios{
+    padding: 2rem; /**padding in all directions**/
+}
+
+/**apply same style to different classes**/
+.contenedor-anuncios h3, 
+.contenedor-anuncios p{
+    margin: 0;
+}
+
+.precio{
+    color: #71b100;
+    font-weight: 700;
+}
+
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
