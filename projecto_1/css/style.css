@@ -6,6 +6,7 @@ html{
 body{
     font-family "Lato", sans-serif: 
     font-size: 1.6rem;
+    line-height: 2;
 }
 
 /* globales*/
@@ -27,6 +28,22 @@ h3{
 h4{
     font-size: 2.6rem;
 }
+
+/**utilidades**/
+/**add litle space at top and bottom**/
+.section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+.       centrar-texto{
+    text-align: center;
+}
+
 
 /*this is style for id, not very used, should not be used several times in the same page
 better to use class */
@@ -79,3 +96,20 @@ better to use class */
 .encabesado{
   color: darkblue;
 }
+
+/**iconos nosotros **/
+
+.iconos-nosotros{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono{
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+}
+
+.icono h3{
+    text-transform: uppercase; 
+}
+
