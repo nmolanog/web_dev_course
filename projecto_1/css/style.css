@@ -72,6 +72,10 @@ h4{
 }
 /*this is style for id, not very used, should not be used several times in the same page
 better to use class */
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
 .site-header.inicio{
   background-image: url(../img/header.jpg);
   background-position: center center;
@@ -289,4 +293,37 @@ better to use class */
     position: relative;
     padding-left: 5rem;
     font-weight: 300;
+}
+/**footer**/
+
+.site-footer{
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+        
+}
+.copyright{
+    margin: 0;
+    color: white;
+}
+
+/**Stilo para pagina internas**/
+
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 2rem;
+}
+
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1 0 3rem 0;
+    
 }
