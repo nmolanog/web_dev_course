@@ -35,7 +35,7 @@ h4{
 
 /**utilidades**/
 /**add litle space at top and bottom**/
-.section{
+.seccion{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -49,6 +49,10 @@ h4{
 }
 .d-block{
     display: block!important; /**break order rulos so it over rides display in .boton**/
+}
+
+.contenido-centrado{
+    max-width: 800px;
 }
 
 /**botones**/
@@ -146,15 +150,19 @@ better to use class */
 
 .contenedor-anuncios{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .anuncio{
+    flex-shrink: 0;
     flex-basis: calc(33.3% - 1rem);
     justify-content: space-between;
     border-style: solid;
     border-color: #b5b5b5;
     border-width: 1px;
     background-color: #f5f5f5;
+    margin-bottom: 2rem;
 }
 
 .contenedor-anuncios{
@@ -176,6 +184,8 @@ better to use class */
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
 }
 
 .iconos-caracteristicas li{
@@ -326,4 +336,11 @@ better to use class */
     margin: 0;
     padding: 1 0 3rem 0;
     
+}
+
+/**anuncio**/
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
