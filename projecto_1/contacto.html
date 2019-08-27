@@ -30,11 +30,34 @@
             <main class="contenedor seccion contenido-centrado">
                 <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
                 <form action="">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Tu nombre">
+                   <fieldset>
+                      <legend>Informacion personal</legend>
+                      <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre">
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="Tu mail">
+
+                        <label for="telefono">Telefono:</label>
+                        <input type="tel" id="telefono" placeholder="Tu telefono" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje"></textarea>
+                   </fieldset>
                     
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" placeholder="Tu mail">
+                    <fieldset>
+                        <legend>Informacion sobre propiedad</legend>
+                        <label for="opciones">Vende o Compra</label>
+                        <select id="opciones">
+                            <option value="" disabled selected>-- seleccione --</option>
+                            <option value="Compra">Compra</option>
+                            <option value="Venta">Venta</option>
+                        </select>    
+                        <label for="cantidad">Cantidad:</label>
+                        <input type="number" min="0" max="10" step="2">
+                    </fieldset>
+                    
+                    <input type="submit">
                 </form>
             </main>
         
